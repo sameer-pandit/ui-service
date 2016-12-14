@@ -1,0 +1,68 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(rel='icon', href='../../favicon.ico')
+    title= title
+    link(href='../../dist/css/bootstrap.min.css', rel='stylesheet')
+    link(href='../../assets/css/ie10-viewport-bug-workaround.css', rel='stylesheet')
+    link(href='../navbar/navbar.css', rel='stylesheet')
+    link(rel='stylesheet', href='http://blueimp.github.io/Gallery/css/blueimp-gallery.min.css')
+    link(rel='stylesheet', href='https://raw.github.com/blueimp/Bootstrap-Image-Gallery/master/css/bootstrap-image-gallery.css')
+    link(rel='stylesheet', href='https://raw.github.com/blueimp/Bootstrap-Image-Gallery/master/css/demo.css')
+    //if lt IE 9
+      script(src='../../assets/js/ie8-responsive-file-warning.js')
+    script(src='../../assets/js/ie-emulation-modes-warning.js')
+    //if lt IE 9
+      script(src='https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')
+      script(src='https://oss.maxcdn.com/respond/1.4.2/respond.min.js')
+  body
+    .container
+      nav.navbar.navbar-default
+        .container-fluid
+          #navbar.navbar-collapse.collapse
+            ul.nav.navbar-nav
+              li
+                a(href='/url') Url
+              li
+                a(href='/upload') UploadImage
+              li.active
+                a(href='/recent') Recent Captions
+      .jumbotron
+        h1 Welcome! Image Captioning Service
+        p
+          | This service provides captioning of image url or uploaded image. See some of the previous image captions.
+        p
+          #links
+            a(data-gallery='', title='Natalia', href='http://farm4.static.flickr.com/3741/11188919165_b73f1ddc32_b.jpg')
+              img(src='http://farm4.static.flickr.com/3741/11188919165_b73f1ddc32_s.jpg')
+            |  
+            a(data-gallery='', title='Delft Touch in the kitchen', href='http://farm4.static.flickr.com/3812/11188050815_5e8cccf0f6_b.jpg')
+              img(src='http://farm4.static.flickr.com/3812/11188050815_5e8cccf0f6_s.jpg')
+            |  
+            a(data-gallery='', title='Father Figure Project: The Social Construct', href='http://farm4.static.flickr.com/3703/11191153143_04bbbc8301_b.jpg')
+              img(src='http://farm4.static.flickr.com/3703/11191153143_04bbbc8301_s.jpg')
+            |  
+            a(data-gallery='', title='Higherbeams.', href='http://farm4.static.flickr.com/3821/11190956343_09b8022ea2_b.jpg')
+              img(src='http://farm4.static.flickr.com/3821/11190956343_09b8022ea2_s.jpg')
+            |  
+            a(data-gallery='', title='Contact', href='http://farm8.static.flickr.com/7325/11186917235_003d9df5d6_b.jpg')
+              img(src='http://farm8.static.flickr.com/7325/11186917235_003d9df5d6_s.jpg')
+            |  
+            a(data-gallery='', title='The Track', href='http://farm6.static.flickr.com/5501/11186913445_c88dd25c59_b.jpg')
+              img(src='http://farm6.static.flickr.com/5501/11186913445_c88dd25c59_s.jpg')
+            |  
+            a(data-gallery='', title='TheHallsOfAdoration', href='http://farm4.static.flickr.com/3715/11186895035_8596236621_b.jpg')
+              img(src='http://farm4.static.flickr.com/3715/11186895035_8596236621_s.jpg')
+    script(src='../../dist/js/jquery.min.js')
+    script.
+      window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\\/script>')
+    script(src='../../dist/js/bootstrap.min.js')
+    script(src='http://blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js')
+    script(src='https://raw.github.com/blueimp/Bootstrap-Image-Gallery/master/js/bootstrap-image-gallery.js')
+    script(src='https://raw.github.com/blueimp/Bootstrap-Image-Gallery/master/js/demo.js')
+    script(src='../../assets/js/ie10-viewport-bug-workaround.js')
